@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Operations</title>
+    <script src="LDU.js"></script>
+    <link rel="stylesheet" href="LDU.css">
+</head>
+<body>
+
+    <h1>Matrix Operations</h1>
+
+    <label for="order">Enter the order of the matrix:</label>
+    <input type="number" id="order" min="1" placeholder="Matrix order (e.g., 3)">
+
+    <div class="matrix-container">
+        <button onclick="show_matrix('matrixA')">Create A Matrix</button>
+        <div id="matrixA" class="matrix-display">
+            <h2>Matrix A</h2>
+        </div>
+        
+        <button onclick="cal_eli('steps')">Calculate Elimination Matrix and U</button>
+        <div id="steps" class="matrix-display">
+            <h2>Elimination Steps & U</h2>
+        </div>
+
+        <button onclick="diagonal('diagonalMatrix')">Create Diagonal Matrix D</button>
+        <div id="diagonalMatrix" class="matrix-display">
+            <h2>Diagonal Matrix D</h2>
+        </div>
+
+        <button onclick="X('upperMatrix')">Calculate U'</button>
+        <div id="upperMatrix" class="matrix-display">
+            <h2>Upper Matrix U'</h2>
+        </div>
+
+        <button onclick="L_Matrix('LMatrix')">Solve for L Matrix</button>
+        <div id="LMatrix" class="matrix-display">
+            
+        </div>
+
+        <button onclick="LDU('LDUMatrix')">Solve for LDU Matrix</button>
+        <div id="LDUMatrix" class="matrix-display">
+            
+        </div>
+    </div>
+
+</body>
+</html>
